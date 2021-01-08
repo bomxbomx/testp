@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom3</title>
+</head>
+<body>
+	<p></p>
+	<h1 onclick="click_event()">Create Element</h1>
+
+	<input type="text" name="name" id="name">
+	<button onclick="add()">Add</button>
+	<ul id="list">
+		<li id="mm">Thant</li>
+	</ul>
+	<script type="text/javascript">
+		function click_event(){
+			var btn=document.CreateElement("button");
+			btn.innerHTML="click me";
+			document.body.appendChild(btn);
+		}
+		function add(){
+			var name=document.getElementById("name").value;
+			var mylist=doucment.getElementById("mm");
+
+			var list_item=document.createElement('li')
+			list_item.innerHTML=name;
+
+			mylist.appendChild(list_item);
+		}
+	</script>
+</body>
+</html>

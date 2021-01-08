@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment one</title>
+</head>
+<body>
+	First Number:<input type="text" name="num1" id="num1"><br>
+	Second Number <input type="text" name="num2" id="num2"><br>
+	<p class="myresult"></p>
+	<button onclick="sum()">Sum</button>
+	<script type="text/javascript">
+		function sum(){
+			var firstnum=document.querySelector("#num1").value;
+			var secondnum=document.getElementById("num2").value;
+			var sum=Number(firstnum)+Number(secondnum);
+			document.querySelector(".myresult").innerText=sum;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam Result</title>
+</head>
+<body>
+Myanmar: <input type="text" name="" id="myanmar"><br>
+English <input type="text" name="" id="english"><br>
+Mathematic <input type="text" name="" id="mathematic"><br>
+
+<button onclick="check()">Result</button>
+<script type="text/javascript">
+	function check(){
+		var Myanmar=Number(document.getElementById('myanmar').value);
+		var English=Number(document.getElementById('english').value);
+		var Mathematic=Number(document.getElementById('mathematic').value);
+		if (Myanmar>=40 && English>=40 && Mathematic>=40) {
+			if (Myanmar>=80 || English>=80 || Mathematic>=80) {
+				console.log("D student")
+			}
+			console.log("exam is pass!");
+		}else{
+			console.log("exam is fail :(")
+		}
+	}
+</script>
+</body>
+</html>

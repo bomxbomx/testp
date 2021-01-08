@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+	<table border="1" cellpadding="10">
+		<thead>
+			<th>No</th>
+			<th>Name</th>
+			<th>age</th>
+			<th>Address</th>
+		</thead>
+		<tbody id="mylist">
+			
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		var student={
+			name:"Mg Mg",
+			address:"ygn",
+			age:23,
+			showinfo:function(){
+				return this.name+"is"+this.age+"yearold and live in"+this.address;
+			}
+
+		}
+		console.log(student.name);
+		console.log(student.address);
+		console.log(student["name"]);
+
+		var mystudent=[];
+		var student1={
+			name:"Mg Mg",
+			age:24,
+			address:"mdy";
+		};
+		var student2={
+			name:"Mya Mya",
+			age:15,
+			address:"ygn";
+		};
+		var student3={
+			name:"Aung Aung",
+			age:24,
+			address:"npt";
+		};
+
+		mystudent.push(student1);
+		mystudent.push(student2);
+		mystudent.push(student3);
+
+		console.log(mystudent);
+		var html="";
+		var j=1;
+		mystudent.forEach(function(v,i){
+			html+=""
+		});
+		document.getElementByID('mylist').innerHTML=html;
+		
+	</script>
+</body>
+</html>

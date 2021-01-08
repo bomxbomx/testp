@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment two</title>
+</head>
+<body>
+	Number one:<input type="text" name="num1" id="num1"><br>
+	Number two:<input type="text" name="num2" id="num2"><br>
+	<p class="result"></p>
+	<button onclick="multiple()">Multiple</button>
+	<script type="text/javascript">
+		function multiple(){
+			var firstnum=document.querySelector("#num1").value;
+			var secondnum=document.getElementById("num2").value;
+			var multiple=Number(firstnum)*Number(secondnum);
+			document.querySelector(".result").innerText=multiple;
+		}
+	</script>
+</body>
+</html>

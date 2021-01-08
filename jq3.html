@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<H3>Student Register Form</H3>
+	EnterName: <input type="text" name="" id="name"> <br>
+	Address: <input type="text" name="" id="address"><br>
+	<button id="register">Register</button>
+
+	<h3>Student Table</h3>
+	<table border="1" cellpadding="5">
+		<thead>
+			<th>Name</th>
+			<th>Address</th>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("register").click(function(){
+
+				var name=$("#name").val();
+				var address=$("address").val();
+
+				var html="";
+				html+=`<tr>
+				<td>Name</td>
+				<td>Address</td>
+				</tr>`
+
+				$("tbody").append(html);
+			})
+		})
+	</script>
+</body>
+</html>
